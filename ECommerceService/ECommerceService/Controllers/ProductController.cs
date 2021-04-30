@@ -88,6 +88,7 @@ namespace ECommerceService.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<Product> PutProduct([FromBody] Product product)
         {
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);

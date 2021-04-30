@@ -105,7 +105,7 @@ namespace ECommerce.Infrastructure
             {
                 throw new ArgumentException("entity");
             }
-            dbSet.Attach(obj);
+            dbSet.Update(obj);
             context.Entry(obj).State = EntityState.Modified;
         }
 
